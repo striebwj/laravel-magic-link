@@ -1,0 +1,54 @@
+{
+  "name": "airranged/laravel-magic-link",
+  "description": "",
+  "keywords": [
+    "airranged",
+    "laravel-magic-link"
+  ],
+  "homepage": "https://github.com/airranged/laravel-magic-link",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Airranged",
+      "email": "opensource@airranged.ca",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "doctrine/dbal": "^2.9",
+    "illuminate/support": "5.8.*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "3.8.*",
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Airranged\\LaravelMagicLink\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Airranged\\LaravelMagicLink\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Airranged\\LaravelMagicLink\\LaravelMagicLinkServiceProvider"
+      ],
+      "aliases": {
+        "LaravelMagicLink": "Airranged\\LaravelMagicLink\\LaravelMagicLinkFacade"
+      }
+    }
+  }
+}
