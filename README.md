@@ -1,9 +1,9 @@
-# Very short description of the package
+# Add support for Magic Links in Laravel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/airranged/laravel-magic-link.svg?style=flat-square)](https://packagist.org/packages/airranged/laravel-magic-link)
 [![Total Downloads](https://img.shields.io/packagist/dt/airranged/laravel-magic-link.svg?style=flat-square)](https://packagist.org/packages/airranged/laravel-magic-link)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+This package will provide a simple way to add support for magic links in your Laravel app.
 
 ## Installation
 
