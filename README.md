@@ -19,9 +19,17 @@ To get started first run `php artisan vendor:publish` to publish all the views a
 
 ### Advanced Usage
 
-You can edit where users get redirected to by adding the following to your `.env` file
+You can edit the routes users visit by adding the following to your `.env` file
+
+`MAGIC_ROUTE` is where your users will go to request a magic login link
+
+`LOGIN_ROUTE` is the url that will handle the auto login
+
+`REDIRECT_ROUTE` is where signed in users will be redirected to
 
 ```
+MAGIC_ROUTE="/secret_login"
+LOGIN_ROUTE="/autologin"
 REDIRECT_ROUTE="/dashboard"
 ```
 
